@@ -1,0 +1,55 @@
+# Local secrets and environment
+.env
+.env.*
+!.env.example
+
+# Python
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Logs and runtime output
+output/
+logs/
+*.log
+app/data/
+
+# Local notes and editor files
+notes/
+.claude/
+.idea/
+.vscode/
+*.code-workspace
+.DS_Store
+Thumbs.db
+agents.md
+
+# Frontend dependencies and build output
+front/agent_front/node_modules/
+front/agent_front/dist/
+front/agent_front/dist-ssr/
+front/agent_front/coverage/
+front/agent_front/*.tsbuildinfo
+front/agent_front/.eslintcache
+front/agent_front/.vite/
+
+# Root-level accidental frontend artifacts
+/package-lock.json
+/front/package-lock.json
+/node_modules/
+/dist/
+
+# Docker runtime data
+docker/milvus/etcd/data/
+docker/milvus/minio/data/
+docker/milvus/milvus/data/
+docker/milvus/milvus/logs/
+
+# Local duplicate config
+config copy.json
